@@ -2,7 +2,7 @@
 
 ## How it work
 
-## config of [plugin](./vite.plugin.wasm-pack.ts)
+## config of [vite.plugin.wasm-pack.ts](./vite.plugin.wasm-pack.ts)
 
 most logic work from [vite.plugin.wasm-pack.ts](./vite.plugin.wasm-pack.ts) to watch and rebuild file if any `.rs` is change
 
@@ -30,7 +30,6 @@ export function wasmPack({
 ### typescript infer type from [package.json](./package.json)
 
 ```json
-// package.json
   "dependencies": {
     "@krist7599555/my-webgl-lib": "link:packages/mywebgllib",
   }
