@@ -5,6 +5,7 @@
 ## config of [vite.plugin.wasm-pack.ts](./vite.plugin.wasm-pack.ts)
 
 most logic work from [vite.plugin.wasm-pack.ts](./vite.plugin.wasm-pack.ts) to watch and rebuild file if any `.rs` is change
+https://github.com/krist7599555/example-vite-plugin-wasmpack/blob/b36f836b7d802595c50904b33ee36870f88395e0/vite.plugin.wasm-pack.ts#L5-L23
 
 ```typescript
 // vite.plugin.wasm-pack.ts
