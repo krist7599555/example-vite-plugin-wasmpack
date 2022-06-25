@@ -68,6 +68,6 @@ pnpm run dev
 
 ## stack
 
-- wasm-pack
+- [wasm-pack](https://rustwasm.github.io/docs/wasm-pack/introduction.html)
 - vite
 - svelte
