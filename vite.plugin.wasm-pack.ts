@@ -5,13 +5,22 @@ import { $ } from "zx";
 /**
  * vite plugin to do wasm hot compile and reload
  */
-export const wasmPack = ({
+export function wasmPack({
+  // root dir to Cargo.toml
   dir = "./",
-  outdir = null as null | string, // default is ./pkg
+
+  // node package output directory (default is ./pkg)
+  outdir = null as null | string,
+
+  // fast compile for dev
   dev = process.env.NODE_ENV !== "production",
+
+  // node package @scope/rustpackagename
   scope = null as null | `@${string}`,
-  watch = ["src/**/*.rs"], // watch relative tto dir as glob pattern
-} = {}): import("vite").Plugin => {
+
+  // hmr watcher glob pattern, relative to `dir`
+  watch = ["src/**/*.rs"],
+} = {}): import("vite").Plugin {
   dir = path.resolve(dir);
 
   let compile_ps: ReturnType<typeof $>;
@@ -58,4 +67,4 @@ export const wasmPack = ({
       };
     },
   };
-};
+}
