@@ -29,6 +29,8 @@ export function wasmPack({
 
 ### typescript infer type from [package.json](./package.json)
 
+https://github.com/krist7599555/example-vite-plugin-wasmpack/blob/fe263b5494081c8296caff7c26bfe105c887a034/package.json#L23-L24
+
 ```json
   "dependencies": {
     "@krist7599555/my-webgl-lib": "link:packages/mywebgllib",
